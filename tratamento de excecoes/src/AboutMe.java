@@ -36,7 +36,7 @@ public class AboutMe {
      scanner.close();   
         } 
         catch (InputMismatchException e){ // se der algum erro tem que colocar no catch qual é a exceção que quer capturar, no caso o erro da exceção aparece quando você inicia e coloca algo errado de proposito, ai só copiar o erro e colar dentro dos parenteses do catch, e logo na frente dê algum nome, chamei de "e".. então caso ocorra aquele erro será disparado a seguinte mensagem abaixo:
-            System.out.println("Os campos de idade e altura precisam ser numéricos");
+            System.err.println("Os campos de idade e altura precisam ser numéricos"); //posso usar System.out.println também dá no mesmo... O .err é justamente para sinalizar erro
         }
      }
 }
